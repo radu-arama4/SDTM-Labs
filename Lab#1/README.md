@@ -40,4 +40,6 @@ __4. The mark of the lab is based on the project and the quiz;__
 
 __5. The link to the repos can be sent to the email address vasile.drumea@faf.utm.md;__
 
-__6. The deadline for this assignment is 10.10.2020;__
+__6. Submit the repository URL on ELSE;__
+
+__7. The deadline for this assignment is 10.10.2020;__
