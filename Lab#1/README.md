@@ -34,11 +34,11 @@ __1. The project should be located in a repository on a git hosting service (e.g
 
 __2. It should contain an explanation in the form of a README file or a LaTeX report with the following standard structure:__
 
-      * Topic of the laboratory work;
-      * Author;
-      * Introduction/Theory;
-      * Implementation & Explanation (you can include code snippets as well);
-      * Results/Screenshots/Conclusions;
+  * Topic of the laboratory work;
+  * Author;
+  * Introduction/Theory;
+  * Implementation & Explanation (you can include code snippets as well);
+  * Results/Screenshots/Conclusions;
 
 __3. In order to make the evaluation as optimal as possible we will have a quiz (03.10.2020) on this topic;__
 
