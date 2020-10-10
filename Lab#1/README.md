@@ -40,7 +40,7 @@ __2. It should contain an explanation in the form of a README file or a LaTeX re
   * Implementation & Explanation (you can include code snippets as well);
   * Results/Screenshots/Conclusions;
 
-__3. In order to make the evaluation as optimal as possible we will have a quiz (03.10.2020) on this topic;__
+__3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
 
 __4. The mark of the lab is based on the project and the quiz;__
 
