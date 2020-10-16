@@ -24,7 +24,7 @@ Some examples of from this category of design patterns are :
 ## Main tasks :
 __1. By extending your project, implement atleast 3 structural design patterns in your project;__
 
-__2. Keep your data model files separated from the ones that containt the functionalities (using packages/directories);
+__2. Keep your data model files separated from the ones that containt the functionalities (using packages/directories);__
 
 __3. Document your work in a separate markdown file or LaTeX report according to the requirements presented below;__
 
