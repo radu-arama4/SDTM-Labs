@@ -45,4 +45,4 @@ __4. The mark of the lab is based on the project and the quiz;__
 
 __5. Submit the repository URL on ELSE;__
 
-__7. The deadline for this assignment is 07.11.2020;__
+__6. The deadline for this assignment is 07.11.2020;__
