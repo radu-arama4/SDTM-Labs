@@ -22,7 +22,8 @@ Some examples of from this category of design patterns are :
    * Proxy
    
 ## Main tasks :
-__1. By extending your project, implement atleast 3 structural design patterns in your project;__
+__1. By extending your project, implement atleast 3 structural design patterns in your project:__
+  * The implemented design pattern should perform the tasks involved in your system (i.e. to make use of other classes as well);
 
 __2. Keep your data model files separated from the ones that containt the functionalities (using packages/directories);__
 
@@ -36,7 +37,9 @@ __2. The markdown file or the LaTeX report should have the following standard st
   * Topic of the laboratory work;
   * Author;
   * Introduction/Theory/Motivation;
-  * Implementation & Explanation (you can include code snippets as well);
+  * Implementation & Explanation (you can include code snippets as well):
+    * Indicate the location of the code snippet;
+    * Emphasize the main idea and motivate the usage of the pattern;
   * Results/Screenshots/Conclusions;
 
 __3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
