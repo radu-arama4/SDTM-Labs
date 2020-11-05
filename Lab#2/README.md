@@ -45,9 +45,14 @@
 ## Evaluation :
 &ensp; &ensp; __1. The project should be located in the same repository as the previous lab;__
 
-&ensp; &ensp; __2. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+&ensp; &ensp; __2. It is allowed to use libs, but only for facilities like:__
+  * Text processing;
+  * UI creation (if necessary);
+  * Other libs that don't contain implemented DPs and which do not do smth that you can do yourself; 
 
-&ensp; &ensp; __3. The mark of the lab is based on the project and the quiz (50%/50%);__
+&ensp; &ensp; __3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+
+&ensp; &ensp; __4. The mark of the lab is based on the project and the quiz (50%/50%);__
 
 &ensp; &ensp; __5. Submit the repository URL on ELSE;__
 
