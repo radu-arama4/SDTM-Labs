@@ -1,17 +1,17 @@
 # Topic: *Structural Design Patterns*
 ## Author: *Drumea Vasile*
 ------
-## Objectives :
-__1. Study and understand the Structural Design Patterns;__
+## Objectives:
+&ensp; &ensp; __1. Study and understand the Structural Design Patterns;__
 
-__2. As a continuation of the previous laboratory work, think about the functionalities that your system will need to provide to the user;__
+&ensp; &ensp; __2. As a continuation of the previous laboratory work, think about the functionalities that your system will need to provide to the user;__
 
-__3. Implement some additional functionalities using some structural design patterns;__
+&ensp; &ensp; __3. Implement some additional functionalities using structural design patterns;__
 
-## Some Theory :
-In software engineering, the Structural Design Patterns are concerned with how classes and objects are composed to form larger structures. Structural class patterns use inheritance to create a hierarchy of classes/abstractions, but the structural object patterns use composition which is generally a more flexible alternative to inheritance.
+## Theoretical background:
+&ensp; &ensp; In software engineering, the Structural Design Patterns are concerned with how classes and objects are composed to form larger structures. Structural class patterns use inheritance to create a hierarchy of classes/abstractions, but the structural object patterns use composition which is generally a more flexible alternative to inheritance.
 
-Some examples of from this category of design patterns are :
+&ensp; &ensp; Some examples of from this category of design patterns are :
 
    * Adapter
    * Bridge
@@ -22,18 +22,18 @@ Some examples of from this category of design patterns are :
    * Proxy
    
 ## Main tasks :
-__1. By extending your project, implement atleast 3 structural design patterns in your project:__
-  * The implemented design pattern should perform the tasks involved in your system (i.e. to make use of other classes as well);
+&ensp; &ensp; __1. By extending your project, implement atleast 3 structural design patterns in your project:__
+  * The implemented design pattern should help to perform the tasks involved in your system;
+  * The object creation mechanisms/patterns can now be buried into the functionalities instead of using them into the client;
+  * There should only be one client for the whole system;
 
-__2. Keep your data model files separated from the ones that containt the functionalities (using packages/directories);__
+&ensp; &ensp; __2. Keep your files grouped (into packages/directories) by their responsibilities (an example project structure):__
+  * client;
+  * domain;
+  * utilities;
+  * data(if applies);
 
-__3. Document your work in a separate markdown file or LaTeX report according to the requirements presented below;__
-
-## Evaluation :
-__1. The project should be located in the same repository as the previous lab;__
-
-__2. The markdown file or the LaTeX report should have the following standard structure (which can be extended if needed):__
-
+&ensp; &ensp; __3. Document your work in a separate markdown file according to the requirements presented below (the structure can be extended of course):__
   * Topic of the laboratory work;
   * Author;
   * Introduction/Theory/Motivation;
@@ -42,10 +42,13 @@ __2. The markdown file or the LaTeX report should have the following standard st
     * Emphasize the main idea and motivate the usage of the pattern;
   * Results/Screenshots/Conclusions;
 
-__3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+## Evaluation :
+__1. The project should be located in the same repository as the previous lab;__
 
-__4. The mark of the lab is based on the project and the quiz;__
+__2. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+
+__3. The mark of the lab is based on the project and the quiz (50%/50%);__
 
 __5. Submit the repository URL on ELSE;__
 
-__6. The deadline for this assignment is 09.11.2020;__
+__6. The deadline for this assignment is 14.11.2020;__
