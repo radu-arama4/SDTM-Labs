@@ -57,3 +57,5 @@
 &ensp; &ensp; __5. Submit the repository URL on ELSE;__
 
 &ensp; &ensp; __6. The deadline for this assignment is 14.11.2020;__
+
+&ensp; &ensp; __7. The laboratory works can be defended either online or at the university during the seminar;__
