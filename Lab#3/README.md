@@ -51,7 +51,12 @@
   * UI creation (if necessary);
   * Other libs that don't contain implemented DPs and which do not do smth that you can do yourself; 
 
-&ensp; &ensp; __3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+&ensp; &ensp; __3. In order to make the evaluation as optimal as possible we will have a quiz on this topic with the following format:__
+  * Everyone has 1 attempt;
+  * The quiz will be open for a week;
+  * After finishing the quiz only the score is available;
+  * The detailed results (wrong/right answers) are available after it is closed;
+  * Have 1 min per question;
 
 &ensp; &ensp; __4. The mark of the lab is based on the project and the quiz (50%/50%);__
 
