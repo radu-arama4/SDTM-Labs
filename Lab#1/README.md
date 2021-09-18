@@ -46,4 +46,4 @@ __4. The mark of the lab is based on the project and the quiz;__
 
 __5. Submit the repository URL on ELSE;__
 
-__7. The deadline for this assignment is TBD;__
+__7. The deadline for this assignment is 03/10/2021;__
