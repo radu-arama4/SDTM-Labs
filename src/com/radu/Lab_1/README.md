@@ -86,6 +86,10 @@ One important part is that the Car Engineer is not dependent on specific impleme
 For now, I have provided a simple result - a simple print of the fields from the created Car.
 Example:
 
+![Capture](https://user-images.githubusercontent.com/59333010/135715491-beab01e6-fc4d-470d-8b30-fab8b74996a9.JPG)
+
+![Capture](https://user-images.githubusercontent.com/59333010/135715549-14c973f1-5a58-4c38-94e0-e11654c53d6e.JPG)
+
 As a conclusion, I can say that in this project can be seen how the design patterns offer more abstraction and that offers
 more flexibility of the code. For example, in my case, I can easily add more implementations of CarBuilder. 
 Also, the code is better structured and more readable.
