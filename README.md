@@ -13,8 +13,8 @@ The markdown file for each task can be accessed via the links below.
 
 ## Laboratory work tasks
 
-[Laboratory Work #1](https://github.com/Wazea/SDTM-Labs/tree/master/Lab%231)
+[Laboratory Work #1](https://github.com/radu-arama4/SDTM-Labs/tree/master/src/com/radu/Lab_1)
 
-[Laboratory Work #2](https://github.com/Wazea/SDTM-Labs/tree/master/Lab%232)
+[Laboratory Work #2](https://github.com/radu-arama4/SDTM-Labs/tree/master/src/com/radu/Lab_2)
 
-[Laboratory Work #3](https://github.com/Wazea/SDTM-Labs/tree/master/Lab%233)
+[Laboratory Work #3](https://github.com/radu-arama4/SDTM-Labs/tree/master/src/com/radu/Lab_3)
