@@ -3,7 +3,7 @@
 #### University: _Technical University of Moldova_
 #### Faculty: _FCIM_
 #### Department: _ISA_
-#### Author: _Drumea Vasile_
+#### Author: _Arama Radu-Vasile FAF-193_
 ----
 
 ## Abstract
