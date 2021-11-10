@@ -1,9 +1,9 @@
-package com.radu.Lab_1;
+package com.radu.Lab_2;
 
-import com.radu.Lab_1.builder.CarBuilder;
-import com.radu.Lab_1.builder.CarBuilderFactory;
-import com.radu.Lab_1.builder.CarTypes;
-import com.radu.Lab_1.entity.Car;
+import com.radu.Lab_2.builder.CarBuilder;
+import com.radu.Lab_2.builder.CarBuilderFactory;
+import com.radu.Lab_2.builder.CarTypes;
+import com.radu.Lab_2.entity.Car;
 
 public class CarEngineeringManager {
   private static CarEngineeringManager carEngineeringManager;
@@ -18,7 +18,7 @@ public class CarEngineeringManager {
   }
 
   public void startProducingCar() {
-    CarBuilder carBuilder = CarBuilderFactory.generateCarBuilder(CarTypes.NEW);
+    CarBuilder carBuilder = CarBuilderFactory.generateCarBuilder(CarTypes.OLD);
 
     CarEngineer carEngineer = new CarEngineer(carBuilder);
 
