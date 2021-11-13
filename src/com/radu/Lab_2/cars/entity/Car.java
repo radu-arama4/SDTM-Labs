@@ -1,4 +1,4 @@
-package com.radu.Lab_2.entity;
+package com.radu.Lab_2.cars.entity;
 
 public class Car implements CarPlan {
   private String engine;

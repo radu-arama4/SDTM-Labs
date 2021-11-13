@@ -1,6 +1,6 @@
-package com.radu.Lab_2.builder;
+package com.radu.Lab_2.cars.functionality.builder;
 
-import com.radu.Lab_2.entity.Car;
+import com.radu.Lab_2.cars.entity.Car;
 
 public interface CarBuilder {
   void buildEngine();

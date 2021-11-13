@@ -1,6 +1,6 @@
-package com.radu.Lab_2.adapter;
+package com.radu.Lab_2.cars.functionality.adapter;
 
-import com.radu.Lab_2.entity.Car;
+import com.radu.Lab_2.cars.entity.Car;
 
 public class RedCarAdapter implements CarAdapter {
   private final Car car;

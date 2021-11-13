@@ -1,4 +1,6 @@
-package com.radu.Lab_2;
+package com.radu.Lab_2.client;
+
+import com.radu.Lab_2.client.singleton.CarEngineeringManager;
 
 public class Main {
 

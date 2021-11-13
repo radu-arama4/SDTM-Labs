@@ -1,4 +1,4 @@
-package com.radu.Lab_2.entity;
+package com.radu.Lab_2.cars.entity;
 
 public interface CarPlan {
   void setEngine(String engine);

@@ -1,7 +1,7 @@
-package com.radu.Lab_2.proxy;
+package com.radu.Lab_2.cars.functionality.proxy;
 
-import com.radu.Lab_2.CarEngineer;
-import com.radu.Lab_2.CarEngineerFacade;
+import com.radu.Lab_2.cars.entity.CarEngineer;
+import com.radu.Lab_2.cars.functionality.facade.CarEngineerFacade;
 
 public class CarEngineerProxy implements CarEngineer {
   private final CarEngineerFacade carEngineer;

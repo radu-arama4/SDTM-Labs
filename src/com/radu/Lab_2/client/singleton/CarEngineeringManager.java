@@ -1,10 +1,11 @@
-package com.radu.Lab_2;
+package com.radu.Lab_2.client.singleton;
 
-import com.radu.Lab_2.builder.CarBuilder;
-import com.radu.Lab_2.builder.CarBuilderFactory;
-import com.radu.Lab_2.builder.CarTypes;
-import com.radu.Lab_2.entity.Car;
-import com.radu.Lab_2.proxy.CarEngineerProxy;
+import com.radu.Lab_2.cars.functionality.builder.CarBuilder;
+import com.radu.Lab_2.cars.functionality.builder.factory.CarBuilderFactory;
+import com.radu.Lab_2.cars.functionality.builder.CarTypes;
+import com.radu.Lab_2.cars.entity.Car;
+import com.radu.Lab_2.cars.functionality.facade.CarEngineerFacade;
+import com.radu.Lab_2.cars.functionality.proxy.CarEngineerProxy;
 
 public class CarEngineeringManager {
   private static CarEngineeringManager carEngineeringManager;
