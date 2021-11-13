@@ -1,13 +1,13 @@
 package com.radu.Lab_2.proxy;
 
 import com.radu.Lab_2.CarEngineer;
-import com.radu.Lab_2.CarEngineerImpl;
+import com.radu.Lab_2.CarEngineerFacade;
 
 public class CarEngineerProxy implements CarEngineer {
-  private final CarEngineerImpl carEngineer;
+  private final CarEngineerFacade carEngineer;
   private final int yearsOfExperience;
 
-  public CarEngineerProxy(CarEngineerImpl carEngineer) {
+  public CarEngineerProxy(CarEngineerFacade carEngineer) {
     this.carEngineer = carEngineer;
     yearsOfExperience = carEngineer.getYearsOfExperience();
   }

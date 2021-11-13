@@ -23,7 +23,7 @@ public class CarEngineeringManager {
 
     int yearsOfExperience = 9;
 
-    CarEngineerImpl carEngineer = new CarEngineerImpl(carBuilder, yearsOfExperience);
+    CarEngineerFacade carEngineer = new CarEngineerFacade(carBuilder, yearsOfExperience);
 
     CarEngineerProxy engineerProxy = new CarEngineerProxy(carEngineer);
 
