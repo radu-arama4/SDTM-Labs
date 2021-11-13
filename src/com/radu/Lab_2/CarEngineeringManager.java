@@ -4,6 +4,7 @@ import com.radu.Lab_2.builder.CarBuilder;
 import com.radu.Lab_2.builder.CarBuilderFactory;
 import com.radu.Lab_2.builder.CarTypes;
 import com.radu.Lab_2.entity.Car;
+import com.radu.Lab_2.proxy.CarEngineerProxy;
 
 public class CarEngineeringManager {
   private static CarEngineeringManager carEngineeringManager;
@@ -20,9 +21,13 @@ public class CarEngineeringManager {
   public void startProducingCar() {
     CarBuilder carBuilder = CarBuilderFactory.generateCarBuilder(CarTypes.OLD);
 
-    CarEngineer carEngineer = new CarEngineer(carBuilder);
+    int yearsOfExperience = 9;
 
-    carEngineer.buildCar();
+    CarEngineerImpl carEngineer = new CarEngineerImpl(carBuilder, yearsOfExperience);
+
+    CarEngineerProxy engineerProxy = new CarEngineerProxy(carEngineer);
+
+    engineerProxy.buildCar();
 
     Car car = carEngineer.getCar();
 
