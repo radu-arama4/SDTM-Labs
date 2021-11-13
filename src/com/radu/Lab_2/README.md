@@ -1,61 +1,120 @@
 # Topic: *Structural Design Patterns*
-## Author: *Drumea Vasile*
+## Author: *Arama Radu-Vasile*
 ------
-## Objectives:
-&ensp; &ensp; __1. Study and understand the Structural Design Patterns;__
+## Introduction
+In this laboratory work I have extended the implementation of the first laboratory work by adding structural
+design patterns. Structural design patterns explain how to assemble objects and classes into larger structures while 
+keeping these structures flexible and efficient.
+I remind that my application simulates the production of cars. 
+## Implementation & Explanation
+In this laboratory work I have implemented 3 structural design patterns:
+* Adapter
+* Proxy
+* Facade
 
-&ensp; &ensp; __2. As a continuation of the previous laboratory work, think about the functionalities that your system will need to provide to the user;__
+------
 
-&ensp; &ensp; __3. Implement some additional functionalities using structural design patterns;__
+In order to implement an Adapter I have created the interface CarAdapter and the class RedCarAdapter. Basically 
+I use it in order to "adapt" the Car to some standards by applying the red color to all its components. The RedCarAdapter
+receives the created Car as a constructor argument.
+```
+public class RedCarAdapter implements CarAdapter {
+  private final Car car;
 
-## Theoretical background:
-&ensp; &ensp; In software engineering, the Structural Design Patterns are concerned with how classes and objects are composed to form larger structures. Structural class patterns use inheritance to create a hierarchy of classes/abstractions, but the structural object patterns use composition which is generally a more flexible alternative to inheritance.
+  private final String redColor = " of red color.";
 
-&ensp; &ensp; Some examples of from this category of design patterns are :
+  public RedCarAdapter(Car car) {
+    this.car = car;
+    car.setEngine(car.getEngine() + redColor);
+    car.setBody(car.getBody() + redColor);
+    car.setRoof(car.getRoof() + redColor);
+    car.setWheels(car.getWheels() + redColor);
+  }
 
-   * Adapter
-   * Bridge
-   * Composite
-   * Decorator
-   * Facade
-   * Flyweight
-   * Proxy
-   
-## Main tasks :
-&ensp; &ensp; __1. By extending your project, implement atleast 3 structural design patterns in your project:__
-  * The implemented design pattern should help to perform the tasks involved in your system;
-  * The object creation mechanisms/patterns can now be buried into the functionalities instead of using them into the client;
-  * There should only be one client for the whole system;
+  @Override
+  public Car getCar() {
+    return car;
+  }
+}
+```
+I have added the adaption functional in the constructor, but I could add it in the getCar() method as well.
+Now, in my application, each time an old car is built, it is "painted" in red.
 
-&ensp; &ensp; __2. Keep your files grouped (into packages/directories) by their responsibilities (an example project structure):__
-  * client;
-  * domain;
-  * utilities;
-  * data(if applies);
+```
+public class OldCarBuilder implements CarBuilder {
+  private final Car car;
 
-&ensp; &ensp; __3. Document your work in a separate markdown file according to the requirements presented below (the structure can be extended of course):__
-  * Topic of the laboratory work;
-  * Author;
-  * Introduction/Theory/Motivation;
-  * Implementation & Explanation (you can include code snippets as well):
-    * Indicate the location of the code snippet;
-    * Emphasize the main idea and motivate the usage of the pattern;
-  * Results/Screenshots/Conclusions;
+  public OldCarBuilder() {
+    this.car = new Car();
+  }
 
-## Evaluation :
-&ensp; &ensp; __1. The project should be located in the same repository as the previous lab;__
+  public Car getCar() {
+    CarAdapter redCarAdapter = new RedCarAdapter(car);
+    return redCarAdapter.getCar();
+  }
+  ...
+}
+```
 
-&ensp; &ensp; __2. It is allowed to use libs, but only for facilities like:__
-  * Text processing;
-  * UI creation (if necessary);
-  * Other libs that don't contain implemented DPs and which do not do smth that you can do yourself; 
+------
 
-&ensp; &ensp; __3. In order to make the evaluation as optimal as possible we will have a quiz on this topic;__
+For the Proxy implementation I have created the class called CarEngineerProxy. I am using it in order to differentiate 
+the way different engineers work by their experience. For example if an engineer has less than 10 years of experience, he will
+make the car slower. The engineer with more or equal than 10 years of experience, will create the car faster.
 
-&ensp; &ensp; __4. The mark of the lab is based on the project and the quiz (50%/50%);__
+```
+public class CarEngineerProxy implements CarEngineer {
+  private final CarEngineerFacade carEngineer;
+  private final int yearsOfExperience;
 
-&ensp; &ensp; __5. Submit the repository URL on ELSE;__
+  public CarEngineerProxy(CarEngineerFacade carEngineer) {
+    this.carEngineer = carEngineer;
+    yearsOfExperience = carEngineer.getYearsOfExperience();
+  }
 
-&ensp; &ensp; __6. The deadline for this assignment is 14.11.2020;__
+  @Override
+  public void buildCar() {
+    System.out.println("Car engineer working...");
+    if (yearsOfExperience < 10) {
+      try {
+        Thread.sleep(3000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    } else {
+      try {
+        Thread.sleep(1000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+    carEngineer.buildCar();
+  }
+}
+```
+As shown, the CarEngineerProxy implements the CarEngineer interface, and it acts as a middleware between the builder manager and
+the functional of building the car.
 
-&ensp; &ensp; __7. The laboratory works can be defended either online or at the university during the seminar;__
+```
+CarEngineerFacade carEngineer = new CarEngineerFacade(carBuilder, yearsOfExperience);
+CarEngineerProxy engineerProxy = new CarEngineerProxy(carEngineer);
+engineerProxy.buildCar();
+```
+------
+For the Facade I have used a simple implementation. The Facade patterns represents a way of abstracting complex functionalities
+in simpler methods. In my case, I use this in the CarEngineerFacade class with the buildCar() method. The "client" doesn't know
+about the specific steps of building a car, it just calls the method.
+```
+  @Override
+  public void buildCar() {
+    carBuilder.buildBody();
+    carBuilder.buildEngine();
+    carBuilder.buildRoofs();
+    carBuilder.buildWheels();
+  }
+```
+------
+## Results
+The actual results of the application are pretty much the same. The main difference is that the car engineers will create the cars
+at different speeds based on their experience. Also, each old car will automatically be created will all components of red color,
+also the difference can be seen in the code structure. 
