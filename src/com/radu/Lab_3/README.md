@@ -157,3 +157,4 @@ The results are as expected. For each client there is a specific case. For the c
 are satisfied. Client with ID 124 has a number of accidents and traffic violations more than 5. The client with ID
 125 has a number of accidents bigger than 5. Also, I have given in the 4th case the ID of a non-existent client. The results
 can be viewed in the image:
+![image](https://user-images.githubusercontent.com/59333010/145688483-1c74448b-6aaf-4d56-8523-eaedcf6a197c.png)
