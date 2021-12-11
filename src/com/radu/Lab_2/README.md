@@ -118,3 +118,8 @@ about the specific steps of building a car, it just calls the method.
 The actual results of the application are pretty much the same. The main difference is that the car engineers will create the cars
 at different speeds based on their experience. Also, each old car will automatically be created will all components of red color,
 also the difference can be seen in the code structure. 
+
+![image](https://user-images.githubusercontent.com/59333010/141656319-6209fa3b-5cd1-4897-a53d-3d33e88bd91a.png)
+![image](https://user-images.githubusercontent.com/59333010/141656352-9971ba03-c159-40cc-b419-d2a9eb304158.png)
+
+
