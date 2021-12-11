@@ -20,7 +20,7 @@ public class CarEngineeringManager {
   }
 
   public void startProducingCar() {
-    CarBuilder carBuilder = CarBuilderFactory.generateCarBuilder(CarTypes.OLD);
+    CarBuilder carBuilder = CarBuilderFactory.generateCarBuilder(CarTypes.NEW);
 
     int yearsOfExperience = 9;
 
